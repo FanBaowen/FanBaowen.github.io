@@ -16,7 +16,7 @@
 					   var layer = layui.layer;
 					   layer.open({
 					   	type: 1,
-					   	title: "2020倒计时",
+					   	title: "2025倒计时",
 					   	anim: 2,
 					   	area: ['600px', '500px'],
 					   	content: $(".newYear"),
@@ -51,14 +51,14 @@
 				 
 				var setInterval1=setInterval(function() {
 					let nTime = new Date();
-					dateDiff(nTime, "2019/11/24 0:0:0");
+					dateDiff(nTime, "2020/6/7 14:0:0");
 					// console.log(formartDate(nTime));
 					// console.log("时间差：" + dTime);
 				}, 1000)
 
 				function dateDiff(nTime, sTime) {
 					if (sTime == null || sTime == "") {
-						sTime = "2019/11/24 0:0:0";
+						sTime = "2020/6/7 14:0:0";
 					}
 					let day1 = new Date(sTime).getTime();
 					let iDays = (nTime.getTime() - day1) / (1000 * 60 * 60 * 24); //天数
@@ -143,7 +143,7 @@
 	<body>
 		<canvas id="c" style="position: absolute;z-index: -1;text-align: center;top: -20px;left: -20px;"></canvas>
 		<div id="div1">
-			<div class="loveName">小短腿❤傻孩子</div>
+			<div class="loveName">豹纹❤冯铁柱</div>
 			<div id="loveTime" class="loveTime">
 				<div id="sTime" class="lTime"></div><br />
 				<div id="nTime" class="lTime"></div><br />
@@ -160,7 +160,7 @@
 		</audio>
 		<div class="newYear" style="font-size: 30px;color: #0FCECE;text-align: center;display: none">
 			<br />
-			<h2 class="endTitle1">距离2020年还剩余：</h2>
+			<h2 class="endTitle1">距离2025年还剩余：</h2>
 			<br />
 			<h1 style="font-size: 88px;color: aqua;" class="endSeconds">50秒</h1>
 			<br />
